@@ -1,1 +1,41 @@
 @import '~bootstrap/scss/bootstrap';
+@import './variable/variables.scss';
+
+// general scss
+body {
+    font-family: $playfair-font;
+    color: $text-color;
+    background-color: $bg-layout;
+}
+
+.my-btn {
+    background-color: $my-green;
+    color: white;
+    min-width: max-content;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $my-green;
+        color: $my-green;
+        background-color: white;
+        transition: border, color, background-color 500ms linear;
+    }
+}
+
+//carousel
+
+#my-carousel {
+    height: 70vh;
+}
+.container-img {
+    width: 100 !important;
+    height: 100% ;
+}
+
+
+.my-img {
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100% !important;
+}
